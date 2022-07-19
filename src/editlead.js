@@ -15,7 +15,7 @@ export function EditLead() {
     e.preventDefault();
     setDisable(true);
     if (name && mobile && email && status) {
-      fetch(`https://guvi-crm.herokuapp.com/leadtable/${_id}`, {
+      fetch(`https://guvi-crm-hackothon.herokuapp.com/leadtable/${_id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export function EditLead() {
   }
 
   function LoadOneLead() {
-    fetch(`https://guvi-crm.herokuapp.com/leadtable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/leadtable/${_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

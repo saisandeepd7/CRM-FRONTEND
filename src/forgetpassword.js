@@ -12,7 +12,7 @@ export default function ForgetPassword() {
       let headersList = {
         "Content-Type": "application/json"
       };
-      fetch("https://guvi-crm.herokuapp.com/forgetpassword", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/forgetpassword", {
         method: "POST",
         body: JSON.stringify({ email_id }),
         headers: headersList

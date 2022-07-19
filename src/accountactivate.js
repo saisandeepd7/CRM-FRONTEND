@@ -9,7 +9,7 @@ export function Activate() {
     setDisable(true);
     event.preventDefault();
     fetch(
-      `https://guvi-crm.herokuapp.com/activate_account/${email_id}/${token}`,
+      `https://guvi-crm-hackothon.herokuapp.com/activate_account/${email_id}/${token}`,
       {
         method: "GET",
         headers: {

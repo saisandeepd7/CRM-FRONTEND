@@ -14,7 +14,7 @@ export default function ResetPassword() {
       let headersList = {
         "Content-Type": "application/json"
       };
-      fetch(`https://guvi-crm.herokuapp.com/resetpassword/${id}/${token}`, {
+      fetch(`https://guvi-crm-hackothon.herokuapp.com/resetpassword/${id}/${token}`, {
         method: "POST",
         body: JSON.stringify({ password: password }),
         headers: headersList

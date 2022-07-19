@@ -10,7 +10,7 @@ export function UserType() {
     e.preventDefault();
     setDisable(true);
     if (email && type) {
-      fetch("https://guvi-crm.herokuapp.com/adduser", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/adduser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export function UserType() {
   }
 
   function LoadUser() {
-    fetch("https://guvi-crm.herokuapp.com/listuser", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/listuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

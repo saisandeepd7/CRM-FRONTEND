@@ -58,7 +58,7 @@ export function DashBoard() {
   const [contactCount, setContactCount] = useState([]);
   const [serviceCount, setServiceCount] = useState([]);
   useEffect(() => {
-    fetch("https://guvi-crm.herokuapp.com/countlead", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/countlead", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -84,7 +84,7 @@ export function DashBoard() {
         );
       })
       .catch((e) => console.log(e));
-    fetch("https://guvi-crm.herokuapp.com/countcontact", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/countcontact", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -110,7 +110,7 @@ export function DashBoard() {
         );
       })
       .catch((e) => console.log(e));
-    fetch("https://guvi-crm.herokuapp.com/countservice", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/countservice", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

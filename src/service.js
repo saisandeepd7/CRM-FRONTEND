@@ -13,7 +13,7 @@ export function Service() {
     e.preventDefault();
     setDisable(true);
     if (name && problem && status) {
-      fetch("https://guvi-crm.herokuapp.com/service_request", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/service_request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export function Service() {
   }
 
   function DeleteService(_id) {
-    fetch(`https://guvi-crm.herokuapp.com/servicetable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/servicetable/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ export function Service() {
       });
   }
   function LoadService() {
-    fetch("https://guvi-crm.herokuapp.com/servicetable", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/servicetable", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

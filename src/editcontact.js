@@ -15,7 +15,7 @@ export function EditContact() {
     e.preventDefault();
     setDisable(true);
     if (name && mobile && email && status) {
-      fetch(`https://guvi-crm.herokuapp.com/contacttable/${_id}`, {
+      fetch(`https://guvi-crm-hackothon.herokuapp.com/contacttable/${_id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export function EditContact() {
   }
 
   function LoadOneContact() {
-    fetch(`https://guvi-crm.herokuapp.com/contacttable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/contacttable/${_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

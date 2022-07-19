@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "./styles.css";
+import "./App.css";
 
 export default function Signup() {
   const history = useHistory();
@@ -27,7 +27,7 @@ export default function Signup() {
       let headersList = {
         "Content-Type": "application/json"
       };
-      fetch("https://guvi-crm.herokuapp.com/signup", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/signup", {
         method: "POST",
         body: JSON.stringify({
           email_id,

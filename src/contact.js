@@ -14,7 +14,7 @@ export function Contact() {
     e.preventDefault();
     setDisable(true);
     if (name && mobile && email && status) {
-      fetch("https://guvi-crm.herokuapp.com/contact", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export function Contact() {
   }
 
   function DeleteContact(_id) {
-    fetch(`https://guvi-crm.herokuapp.com/contacttable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/contacttable/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ export function Contact() {
       });
   }
   function LoadContact() {
-    fetch("https://guvi-crm.herokuapp.com/contacttable", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/contacttable", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

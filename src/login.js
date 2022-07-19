@@ -18,7 +18,7 @@ export default function Login({
       let headersList = {
         "Content-Type": "application/json"
       };
-      fetch("https://guvi-crm.herokuapp.com/login", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/login", {
         method: "POST",
         body: JSON.stringify({ email_id, password }),
         headers: headersList
@@ -124,11 +124,11 @@ export default function Login({
                   <b>Admin</b> email_id=123@gmail.com ,password=123456
                 </div>
                 <div>
-                  <b> Manager</b> email_id=123@gmail.com ,password=123456
+                  <b> Manager</b> email_id=456@gmail.com ,password=123456
                   ,password=welcome
                 </div>
                 <div>
-                  <b>Employee</b> email_id=123@gmail.com ,password=123456
+                  <b>Employee</b> email_id=789@gmail.com ,password=123456
                 </div>
               </div>
             </div>

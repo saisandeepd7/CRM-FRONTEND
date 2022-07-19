@@ -14,7 +14,7 @@ export function Lead() {
     e.preventDefault();
     setDisable(true);
     if (name && mobile && email && status) {
-      fetch("https://guvi-crm.herokuapp.com/lead", {
+      fetch("https://guvi-crm-hackothon.herokuapp.com/lead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export function Lead() {
   }
 
   function DeleteLead(_id) {
-    fetch(`https://guvi-crm.herokuapp.com/leadtable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/leadtable/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ export function Lead() {
       });
   }
   function LoadLead() {
-    fetch("https://guvi-crm.herokuapp.com/leadtable", {
+    fetch("https://guvi-crm-hackothon.herokuapp.com/leadtable", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

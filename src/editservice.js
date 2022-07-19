@@ -14,7 +14,7 @@ export function EditService() {
     e.preventDefault();
     setDisable(true);
     if (name && problem && status) {
-      fetch(`https://guvi-crm.herokuapp.com/servicetable/${_id}`, {
+      fetch(`https://guvi-crm-hackothon.herokuapp.com/servicetable/${_id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export function EditService() {
   }
 
   function LoadOneService() {
-    fetch(`https://guvi-crm.herokuapp.com/servicetable/${_id}`, {
+    fetch(`https://guvi-crm-hackothon.herokuapp.com/servicetable/${_id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
