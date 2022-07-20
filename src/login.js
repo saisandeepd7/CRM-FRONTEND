@@ -119,17 +119,7 @@ export default function Login({
                 >
                   Forgot Password
                 </button>
-                <div>DEMO</div>
-                <div>
-                  <b>Admin</b> email_id=123@gmail.com ,password=123456
-                </div>
-                <div>
-                  <b> Manager</b> email_id=456@gmail.com ,password=123456
-                  ,password=welcome
-                </div>
-                <div>
-                  <b>Employee</b> email_id=789@gmail.com ,password=123456
-                </div>
+                
               </div>
             </div>
           </div>

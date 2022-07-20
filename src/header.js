@@ -38,7 +38,7 @@ export function Header({
     <div>
       <nav className="navbar navbar-black bg-dark" style={{ padding: "10px" }}>
         <a className="navbar-brand" style={{ color: "white" }}>
-          <b>MY_CRM</b>
+          <b>CRM APP</b>
         </a>
 
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
